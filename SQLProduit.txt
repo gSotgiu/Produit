@@ -1,0 +1,34 @@
+INSERT INTO  Adresse (Ville, Rue, CodePostal, Pays) VALUES ('Aix-les-Bains','Rue de la rue','73100','France')
+
+INSERT INTO Client (Prenom, Nom, Pseudo, Email, MotDePasse, IdAdresse) VALUES ('Jean','Dupont','Zr977','Zr977@untruc.com','01/01/1992',1)
+
+INSERT INTO Catégorie ( Nom)VALUES ('Vêtement'),('Mobilier') , ('Nourriture')
+
+INSERT INTO Article (Nom, Description, PrixDefaut, IdCatégorie) VALUES ('Polo éco+','Je suis un vêtement', 3, 1)
+
+INSERT INTO TypeVariant( NomType) VALUES ('Couleur'),('Longueur Manche')
+
+INSERT INTO OptionVariant (Valeur, IdTypeVariant, IdArticleVariant) VALUES ('bleu',1),('rouge',1),('manche longue',2),('manche courte',2)
+
+INSERT INTO ArticleVariant (PrixSpecifique, Image, IdArticle) VALUES (3,'urlimage1',1), (4,'urlimage2',1)
+
+
+INSERT INTO  Stock ( QuantiteDisponible, IdArticleVariant) VALUES (15, 1), (10,2)
+
+INSERT INTO Statut (Etat) VALUES ('en cours'), ('annulé'), ('terminé')
+
+INSERT INTO Avis (Note, Commentaire, IdArticleVariant, IdClient) VALUES (10,'bien',1,1),(0,'mauvais',2,1)
+
+INSERT INTO Commande (DateCommande, IdAdresse, IdStatut, IdClient) VALUES ('2023-02-02',1,1,1)
+
+INSERT INTO LigneCommande  (Quantite, IdArticleVariant, IdCommande) VALUES (3,1,1),(4,2,1)
+
+INSERT INTO Promotion (Debut, Fin, PourcentageReduction, IdArticle) VALUES ('2023-04-08','2024-01-01',30,1)
+
+INSERT INTO Remise ( PourcentageReduction, IdArticle) VALUES (10,1)
+
+INSERT INTO Beneficie(idclient, idremise) VALUES (1,1);
+
+
+
+
