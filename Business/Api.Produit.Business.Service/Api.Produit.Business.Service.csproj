@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Data\Api.Produit.Data.Repository.Contract\Api.Produit.Data.Repository.Contract.csproj" />
+    <ProjectReference Include="..\Api.Produit.Business.Mapper\Api.Produit.Business.Mapper.csproj" />
+    <ProjectReference Include="..\Api.Produit.Business.Service.Contract\Api.Produit.Business.Service.Contract.csproj" />
+    <ProjectReference Include="..\Api.Produit.Business.Service.Dto\Api.Produit.Business.Service.Dto.csproj" />
+  </ItemGroup>
+
+</Project>
